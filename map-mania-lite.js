@@ -28,7 +28,7 @@ function initMap() {
       var marker3 = new google.maps.Marker({position:{lat:39.09,lng:-120.03}, map:gMap});
       marker3.setIcon('https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png');
  
-      var infoWindow = new google.maps.InfoWindow({content:'Wedding and Honeymoon, 16 people flew in, Lake Tahoe!'});
+      var infoWindow = new google.maps.InfoWindow({content:'Wedding and Honeymoon, 17 people flew in, Lake Tahoe!'});
       marker3.addListener('click', function() {
           infoWindow.open(gMap, marker3);
       });
