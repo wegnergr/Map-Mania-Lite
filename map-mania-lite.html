@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<!--
+  Author:  Greg Wegner  
+  Class:   Web and Distributed programming
+  Session: Fall 2018
+  Description: Map Mania Lite v1
+  loggine - browser-open console-3 dots-more tools-console to watch logs
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Map Mania Lite</title>
+    <link rel="stylesheet" href="map-mania-lite.css">
+    <script src="map-mania-lite.js"></script>
+    <style>
+        /*
+            Always set the map height explicitly to define the size of the div element that contains
+            the map. Note that some of the tutorials re-used "map" too many times. Confusing: 
+        */
+        #myMapID {
+            height: 100%;
+            width: 100%;
+        }
+            /*
+            Optional: Makes the sample page fill the window. Fill all of window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+  </head>
+  <body onload="initApplication();">
+       <h1>Map Mania Lite v1.3</h1>
+       <div id="myMapID"></div>
+
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUhfkL9e8guPs3FulSFqnfX5hosuJF0_8&callback=initMap"
+           async defer></script>
+  </body>
+</html>
